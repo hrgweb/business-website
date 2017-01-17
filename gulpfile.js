@@ -20,8 +20,8 @@ gulp.task('html', function() {
 // scss
 gulp.task('scss', function() {
 	return scss(scssSrc, {
-		// style: 'compressed',
-		style: 'expanded',
+		style: 'compressed',
+		// style: 'expanded',
 		sourcemap: true
 	})
 		.pipe(gulp.dest(scssDest))
