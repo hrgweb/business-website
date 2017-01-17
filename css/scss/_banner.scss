@@ -1,0 +1,32 @@
+.banner {
+	background: url('../img/banner-bg.png') no-repeat center;
+	background-size: cover;
+	padding: 3em 1.5em;
+	position: relative;
+	height: 535px;
+	max-height: 535px;
+}
+
+.banner-desc {
+	hgroup { text-align: center; }
+
+	h3, h2 { 
+		color: $white; 
+		@include text-shadow;
+	}
+
+	h2 { 
+		font-size: 2em;
+		text-transform: uppercase;
+	}
+}
+
+.banner-button { margin: 3em 0 2em; }
+
+.banner-logo {
+	position: relative;
+	bottom: 0;
+
+	display: flex;
+	justify-content: center;
+}

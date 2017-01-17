@@ -1,0 +1,21 @@
+@mixin a-style($background: $blue) {
+	background: $background;
+	color: $white;
+}
+
+@mixin a-hover-style() {
+	&:hover {
+		background: url('../img/hover-bg.png') no-repeat center;
+		background-size: cover;
+		color: $white;
+	}
+}
+
+@mixin text-shadow($color:$black) {
+	text-shadow: 0 0 10px $color;
+}
+
+@mixin p-style() {
+	font-size: 1.1em;
+	line-height: 1.7em;
+}

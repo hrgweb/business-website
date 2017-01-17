@@ -1,0 +1,38 @@
+/*=============== Global ===============*/ 
+a {
+	color: $link-color;
+}
+
+header {
+	background: $white;
+	position: relative;
+}
+
+.header-logo {
+	padding: 1.5em 1.5em 1em;
+}
+
+.header-menu {
+
+	li {
+		&:first-child > a {
+			@include a-style;
+		}
+	}
+
+	a {
+		display: flex;
+		padding: 1em;
+		text-transform: uppercase;
+		font-weight: bold;
+
+		&:hover { @include a-style($link-hover-color); }
+		&:focus { @include a-style($link-focus-color); }
+	}
+}
+
+.header-contact {
+	position: absolute;
+	top: 0;
+	right: 0;
+}

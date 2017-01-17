@@ -1,0 +1,152 @@
+@media only screen and (min-width: 48em) {
+	/*=============== header ===============*/ 
+
+	header {
+		height: 100px;
+	}
+
+	header,
+	.header-menu {
+		display: flex;
+		align-items: center;
+	}
+
+	.header-menu {
+		justify-content: flex-end;
+	}
+
+	.header-menu > ul {
+		display: flex;
+		padding-right: 2em;
+
+		li:first-child > a {
+			background: none;
+			color: $gray;
+			@include a-hover-style;
+		}
+
+		a { 
+			background: none;
+			color: $gray; 
+			@include a-hover-style;
+		}
+
+	}
+
+	/*=============== .banner ===============*/ 
+
+	.banner {
+		width: 100%;
+		height: 350px;
+		max-height: 350px;
+	}
+
+	.banner-desc {
+		padding-left: 3em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		hgroup {
+			text-align: left;
+
+			h3 { font-size: 2em; padding-right: 1em; }
+			h2 { font-size: 2.8em; }
+		}
+	}
+
+	.banner-logo {
+		position: relative;
+		bottom: -2.8em;
+		right: 2em;
+	}
+
+	.banner-button {
+		margin: 2em 0 0;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	/*=============== .service ===============*/ 
+
+	.service {
+		
+		> article {
+			margin-top: 1rem;
+    		padding-top: 1rem;
+		}
+	}
+
+	/*=============== .offer ===============*/ 
+
+	.offer {
+
+	}
+
+	.offer-item-title { margin-bottom: 3em !important; }
+
+	.offer-item-img {
+		margin-right: 3em;
+	}
+
+	.offer-item-detail {
+
+	}
+
+	/*=============== .contact ===============*/ 
+
+	section.contact {
+		padding: 3em 3em 0;
+	}
+
+	.contact-site,
+	.contact-testimonials,
+	.contact-blog {
+		h3,
+		ul a {
+			text-align: left;
+		}
+	}
+
+	.contact-site { 
+		padding-top: 0;
+	}
+
+	.contact-site,
+	.contact-testimonials {
+		border-bottom: none !important;
+	}
+
+	/*=============== .footer-info ===============*/ 
+
+	.footer-info {
+		p { text-align: left; }
+	}
+}
+
+@media only screen and (min-width: 64em) {
+	.offer-item-title { margin-bottom: 0 !important; }
+
+	.offer-item-img {
+		margin-right: 0;
+
+		img { width: 100%; }
+	}
+}
+
+@media only screen and (min-width: 75em) {
+	.banner {
+		padding: 0 10em 0 15em;
+	}
+
+	.service,
+	.offer,
+	section.contact,
+	footer {
+		padding: 5em 15em 3em;	
+	}
+
+	.offer {
+		padding-top: 3em;
+	}
+}
